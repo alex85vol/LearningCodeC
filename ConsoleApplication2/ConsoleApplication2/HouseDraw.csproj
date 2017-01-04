@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SmallBasicLibrary">
-      <HintPath>D:\Learning\C#\05052015083527\1 Draw Square\lib\SmallBasicLibrary.dll</HintPath>
+      <HintPath>C:\Program Files\Microsoft\Small Basic\SmallBasicLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,12 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Colorize.cs" />
+    <Compile Include="DrawHouse.cs" />
     <Compile Include="DrawRectangle.cs" />
     <Compile Include="DrawTriangle.cs" />
     <Compile Include="IDraw.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetPosition.cs" />
+    <Compile Include="SetPositionForHouse.cs" />
+    <Compile Include="SetPositionForRaw.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

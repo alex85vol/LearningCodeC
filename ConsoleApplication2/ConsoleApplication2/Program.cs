@@ -15,19 +15,18 @@ namespace HouseDraw
             var a = 100;
             var b = 90;
             Turtle.Speed = 9;
-            SetPosition setPosition = new SetPosition();
-            DrawRectangle drawRectangle = new DrawRectangle();
-            DrawTriangle drawTriangle = new DrawTriangle();
-            
-            drawRectangle.drawFigure(a, b, 5);
-            drawTriangle.drawFigure(a, b, 0);
-            setPosition.drawFigure(a, b, 0);
-            drawRectangle.drawFigure(a/3, b, 4);
-            
 
-
-
-
+            for (int y = 0; y < 3; y++)
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    DrawHouse.drawHouse(a, b);
+                    SetPositionForHouse setPositionForHouse = new SetPositionForHouse();
+                    setPositionForHouse.drawFigure(a, b, 0);
+                }
+                SetPositionForRaw setPositionRow = new SetPositionForRaw();
+                setPositionRow.drawFigure(a, b, 0);
+            }
         }
     }
     }

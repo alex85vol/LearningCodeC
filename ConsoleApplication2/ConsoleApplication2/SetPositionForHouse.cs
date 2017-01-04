@@ -5,21 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace HouseDraw
 {
-    class SetPosition : IDraw
+    class SetPositionForHouse : IDraw
     {
-        public void drawFigure(int a, int b, int j)
-        {
-            
+        public void drawFigure(int a, int b, int j) {
             Turtle.PenUp();
-            Turtle.Move(2*a/3);
-            Turtle.Turn(b);
-            Turtle.Move(a/3);
+            Turtle.Turn(2*b);
+            Turtle.Move(a);
+            Turtle.TurnRight();
+            Turtle.Move(0.32 * a);
+            Turtle.Turn(2 * b);
             Turtle.PenDown();
-
-
-
         }
     }
 }

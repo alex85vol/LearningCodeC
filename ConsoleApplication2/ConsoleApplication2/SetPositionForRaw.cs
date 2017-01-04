@@ -7,18 +7,17 @@ using System.Threading.Tasks;
 
 namespace HouseDraw
 {
-    class SetPosition : IDraw
+    class SetPositionForRaw : IDraw
     {
         public void drawFigure(int a, int b, int j)
         {
-            
             Turtle.PenUp();
-            Turtle.Move(2*a/3);
-            Turtle.Turn(b);
-            Turtle.Move(a/3);
+            Turtle.TurnLeft();
+            Turtle.Move(8.3 * a);
+            Turtle.TurnLeft();
+            Turtle.Move(2 * a);
+            Turtle.Turn(2 * b);
             Turtle.PenDown();
-
-
 
         }
     }

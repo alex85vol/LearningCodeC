@@ -11,9 +11,26 @@ namespace KohSnow
     {
         static void Main(string [] args)
         {
-            int len = 100;
-            int angle = 45;
-            BasicDraw.basicDraw(len, angle);
+            Turtle.Speed = 10;
+            int len = 150;
+            DrawLineRec.drawLineR(len);
+           
+        /*    for ( int i = 0; i < 15; i++ )
+            {
+
+               int angle = 60;
+               int n = 4;
+                 for ( int i = 0; i < 3; i++ )
+                 {
+                     BasicDraw.basicDraw(len, angle, n);
+                     Turtle.Turn(2 * angle);
+                 }
+
+                DrawLine.drawLine(len);
+                Turtle.Move(10);
+                Turtle.Turn(10);
+            }*/
+
 
         }
     }

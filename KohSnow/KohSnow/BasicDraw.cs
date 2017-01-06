@@ -9,16 +9,19 @@ namespace KohSnow
 {
     class BasicDraw
     {
-        public static void basicDraw(int len, int angle)
+        public static void basicDraw(int len, int angle, int n)
         {
-            Turtle.Turn(2 * angle);
-            Turtle.Move(len);
-            Turtle.Turn(-angle);
-            Turtle.Move(len);
-            Turtle.Turn(2 * angle);
-            Turtle.Move(len);
-            Turtle.Turn(-angle);
-            Turtle.Move(len);
+            if ( n == 0 ) Turtle.Move(len);
+            else
+            {
+                basicDraw(len / 3, angle, n - 1);
+                Turtle.Turn(-angle);
+                basicDraw(len / 3, angle, n - 1);
+                Turtle.Turn(2 * angle);
+                basicDraw(len / 3, angle, n - 1);
+                Turtle.Turn(-angle);
+                basicDraw(len / 3, angle, n - 1);
+            }
         }
     }
 }
